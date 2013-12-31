@@ -8,4 +8,10 @@ def naive(n):
     if (n in primes):
         return [n]
 
-    return []
+    factorials = []
+
+    while (n % primes[0] == 0):
+        factorials.append(primes[0])
+        n = n / primes[0]
+
+    return factorials
