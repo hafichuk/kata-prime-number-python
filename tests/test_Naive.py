@@ -29,3 +29,8 @@ class TestNaive(unittest.TestCase):
         n = 4
         primes = [2,2]
         self.assertEquals(primes, naive(n))
+
+    def test_5(self):
+        n = 5
+        primes = [5]
+        self.assertEquals(primes, naive(n))
