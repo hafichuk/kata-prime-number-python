@@ -1,0 +1,2 @@
+def naive(n):
+    return []
