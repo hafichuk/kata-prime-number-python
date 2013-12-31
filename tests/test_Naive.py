@@ -6,5 +6,16 @@ class TestNaive(unittest.TestCase):
         pass
 
     def test_0(self):
+        n = 0
         primes = []
-        self.assertEquals(primes, naive(0))
+        self.assertEquals(primes, naive(n))
+
+    def test_1(self):
+        n = 1
+        primes = []
+        self.assertEquals(primes, naive(n))
+
+    def test_2(self):
+        n = 2
+        primes = [2]
+        self.assertEquals(primes, naive(n))
