@@ -7,7 +7,6 @@ def naive(n):
 
     factorials = []
     divisor = 2
-    nsqrt = math.sqrt(n)
 
     while n > 1:
         if (n%divisor == 0):
@@ -15,7 +14,7 @@ def naive(n):
             n = n/divisor
         else:
             divisor = divisor + 1
-            if divisor > nsqrt:
+            if divisor > math.sqrt(n):
                 divisor = n
 
     return factorials
