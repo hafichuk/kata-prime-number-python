@@ -3,7 +3,7 @@ def naive(n):
     if (n < 2):
         return []
 
-    primes = [2, 3, 5]
+    primes = [2, 3, 5, 7]
 
     if (n in primes):
         return [n]
