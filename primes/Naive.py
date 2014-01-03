@@ -10,8 +10,13 @@ def naive(n):
 
     factorials = []
 
-    while (n % primes[0] == 0):
-        factorials.append(primes[0])
-        n = n / primes[0]
+    count = len(primes)
+    i = 0
+    while (i < count):
+        if (n % primes[i] == 0):
+            factorials.append(primes[i])
+            n = n / primes[i]
+        else:
+            i = i+1
 
     return factorials
