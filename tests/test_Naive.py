@@ -54,3 +54,8 @@ class TestNaive(unittest.TestCase):
         n = 9
         primes = [3,3]
         self.assertEquals(primes, naive(n))
+
+    def test_10(self):
+        n = 10
+        primes = [2,5]
+        self.assertEquals(primes, naive(n))
