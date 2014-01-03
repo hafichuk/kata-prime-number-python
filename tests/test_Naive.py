@@ -20,7 +20,7 @@ class TestNaive(unittest.TestCase):
             [10, [2,5]],
             [84, [2,2,3,7]],
             [100, [2,2,5,5]],
-
+            [2*3*5*7*11*13*17, [2,3,5,7,11,13,17]]
         )
 
         for number in numbers:
