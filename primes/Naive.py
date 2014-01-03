@@ -3,20 +3,14 @@ def naive(n):
     if (n < 2):
         return []
 
-    primes = [2, 3, 5, 7]
-
-    if (n in primes):
-        return [n]
-
     factorials = []
+    divisor = 2
 
-    count = len(primes)
-    i = 0
-    while (i < count):
-        if (n % primes[i] == 0):
-            factorials.append(primes[i])
-            n = n / primes[i]
+    while n > 1:
+        if (n%divisor == 0):
+            factorials.append(divisor)
+            n = n/divisor
         else:
-            i = i+1
+            divisor = divisor + 1
 
     return factorials
