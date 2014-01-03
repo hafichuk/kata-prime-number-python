@@ -1,4 +1,6 @@
 def naive(n):
+    import math
+
     """A prime number is a number, larger than 1, that can only be divided evenly by itself and 1"""
     if (n < 2):
         return []
