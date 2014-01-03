@@ -18,7 +18,9 @@ class TestNaive(unittest.TestCase):
             [8, [2]*3], 
             [9, [3,3]], 
             [10, [2,5]],
-            [100, [2,2,5,5]]
+            [84, [2,2,3,7]],
+            [100, [2,2,5,5]],
+
         )
 
         for number in numbers:
